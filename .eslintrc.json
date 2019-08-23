@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+      "key-spacing": ["error", { "mode": "minimum", "align": { "beforeColon": true, "afterColon": true, "on": "colon" } }],
+      "align-assignments/align-assignments": [2, { "requiresOnly": false } ]
+    },
+    "plugins": [
+      "align-assignments"
+    ]
+}
